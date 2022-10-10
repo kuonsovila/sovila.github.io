@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kuon SOvila - Back-end Developer</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container">
+    <div class="outer">
       <div class="home-image">
         <div class="appbar">
-          <v-spacer></v-spacer>
           <button text @click="scroll('home')" class="white--text">Home</button>
           <button text @click="scroll('project')" class="white--text">
             Projects
@@ -29,30 +49,171 @@
             I'm a Creative Problem Solver and Back-end Developer.<br />
           </h3>
           <br />
-          <button
-            tile
-            color="#A7121D"
-            dark
-            href="https://github.com/kuonsovila"
-            target="_blank"
-          >
-            Github
-          </button>
+          <a href="https://github.com/kuonsovila" target="_blank">Github</a>
+        </div>
+      </div>
+      <div class="project-image">
+        <div class="first" id="project">
+          <p class="project-title">My Projects</p>
+          <div class="col-12">
+            <div class="card" style="background-color: rgba(40, 44, 52, 0.95)">
+              <div class="row">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: white">CRUD</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text" style="color: white">
+                      This app allow user to Insert Update Read and Delete. I've
+                      use Json-server to store data.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card-body">
+                    <a href="#" class="card-link">Front-end</a>
+                    <a href="#" class="card-link">Visit</a>
+                    <img src="./image/code.jpg" alt="" id="crud-pic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+          </div>
+          <div class="col-12">
+            <div class="card" style="background-color: rgba(40, 44, 52, 0.95)">
+              <div class="row">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: white">CRUD</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text" style="color: white">
+                      This app allow user to Insert Update Read and Delete. I've
+                      use Json-server to store data.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card-body">
+                    <a href="#" class="card-link">Front-end</a>
+                    <a href="#" class="card-link">Visit</a>
+                    <img src="./image/code.jpg" alt="" id="crud-pic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="myskill" class="skill-image">
+        <div class="skill">
+          <p class="skill-header">My Skill</p>
+          <div class="card" style="background-color: rgba(40, 44, 52, 0.95)">
+            <!-- back-end -->
+            <p class="ma-5 mt-6 pt-3 skill-title">Back-end Development</p>
+            <p class="skill-subtitle ml-5 mb-3">
+              &nbsp; Nest.js &nbsp;. Javascript &nbsp;. Java &nbsp;. Mysql .
+              &nbsp; Typescript . &nbsp; Git
+            </p>
+            <hr />
+
+            <!-- front-end -->
+            <p class="ma-5 skill-title">Front-end Development</p>
+            <p class="skill-subtitle ml-5 mb-3">
+              &nbsp; HTML5 &nbsp;. CSS &nbsp;. JS ES6 &nbsp;. VUE.JS
+            </p>
+            <hr />
+
+            <!-- security -->
+            <p class="ma-5 skill-title">Security</p>
+            <p class="skill-subtitle ml-5 mb-3">
+              &nbsp; Bcrypt &nbsp;. Json web token
+            </p>
+            <hr />
+
+            <!-- development environment -->
+            <p class="ma-5 skill-title">Development Environment</p>
+            <p class="skill-subtitle ml-5 mb-3">
+              &nbsp; APIs &nbsp;. Git . &nbsp; npm . &nbsp; ESlint . &nbsp;
+              Prettier . &nbsp; Heroku . &nbsp; ENV . &nbsp;Command Line
+            </p>
+            <!-- <hr /> -->
+          </div>
+        </div>
+      </div>
+      <div id="aboutme" class="about-image">
+        <div class="aboutme">
+          <p class="about-title">
+            ABOUT ME &nbsp; <span>Here's Why I Build</span>
+          </p>
+
+          <!-- technology -->
+          <div class="card" style="background-color: rgba(40, 44, 52, 0.95)">
+            <v-card-title class="ma-5 mt-6 pt-3 skill-title"
+              >Technology</v-card-title
+            >
+            <p class="about-subtitle ml-5 mb-3">
+              The improvements in technology over the last 15 years have been
+              huge. We interact with technology on a daily basis and the tech
+              industry now has one of the most significant impacts on the world.
+              The industry is constantly changing and
+              <span>
+                I believe that change is good, and that learning should never
+                stop.
+              </span>
+              &nbsp; I love learning new things on a daily basis as a Developer
+              and being at the forefront of this phenomenal industry. Over the
+              last several years things have begun moving incredibly fast and
+              web development is becoming even more important as Web Apps
+              replace traditional software.
+            </p>
+          </div>
+          <br />
+          <!-- little first -->
+          <div class="card" style="background-color: rgba(40, 44, 52, 0.95)">
+            <p class="ma-5 mt-6 pt-3 skill-title">Little First</p>
+            <p class="about-subtitle ml-5 mb-3">
+              Everythings is start from little thing. Then the bunch of little
+              things are going to do The Great Thing.
+              <span> I know that, little things make all the difference. </span>
+            </p>
+          </div>
+          <br />
+          <!-- contact -->
+          <div class="card" style="background-color: rgba(40, 44, 52, 0.95)">
+            <p class="ma-5 mt-6 pt-3 contact-title">Contact Me</p>
+            <p class="contact-subtitle ml-5 mb-3">
+              Email: kuonsovila@gmail.com <br />
+              Phone: (+855) 93 759 695
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script>
+  function scroll(refName) {
+    const element = document.getElementById(refName);
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
 <style scoped>
+  body {
+    height: 100%;
+    margin: 0;
+  }
   * {
     padding: 0;
     margin: 0;
   }
   .skill-subtitle {
     font-size: 2.5vh;
+    color: white;
   }
   .skill-title {
     color: rgb(238, 182, 144);
+    padding-left: 30px;
   }
   .about-subtitle {
     font-size: 2.2vh;
@@ -73,6 +234,7 @@
   .contact-subtitle {
     text-align: center;
     padding-bottom: 10px;
+    color: white;
   }
   .skill {
     width: 60%;
@@ -91,7 +253,7 @@
     font-size: 3vh;
   }
   #crud-pic {
-    width: 250px;
+    width: 200px;
     height: 200px;
     justify-content: center;
   }
@@ -116,11 +278,26 @@
   }
   .detail-first {
     padding: 20px;
+    color: wheat;
   }
   .appbar {
-    margin-left: 70%;
+    margin-left: 75%;
     padding: 10px;
     position: fixed;
+  }
+  .appbar button {
+    border: none;
+    background: none;
+    padding: 9px 15px;
+    font-size: 2vh;
+    color: none;
+    cursor: pointer;
+    color: white;
+  }
+  .appbar button:hover {
+    border-radius: 7px;
+    padding: 9px 15px;
+    border: 1px solid gray;
   }
   #name {
     font-size: 40px;
@@ -135,6 +312,13 @@
     padding-right: 27%;
     color: white;
   }
+  .desc a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ce1d2a;
+    padding: 10px 15px;
+    background-color: #ce1d2a;
+  }
   .home-image {
     background-image: url("./image/code.jpg");
     height: 800px;
@@ -144,15 +328,15 @@
     background-attachment: fixed;
   }
   .project-image {
-    background-image: url("../assets/coding.jpg");
-    height: 800px;
+    background-image: url("./image/coding.jpg");
+    height: 900px;
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
   .skill-image {
-    background-image: url("../assets/kevin-canlas-ia7-T2bjDb4-unsplash.jpg");
+    background-image: url("./image/kevin-canlas-ia7-T2bjDb4-unsplash.jpg");
     height: 800px;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -160,8 +344,8 @@
     background-attachment: fixed;
   }
   .about-image {
-    background-image: url("../assets/mohammad-rahmani-1bNQVGzuy0U-unsplash.jpg");
-    height: 800px;
+    background-image: url("./image/mohammad-rahmani-1bNQVGzuy0U-unsplash.jpg");
+    height: 900px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
