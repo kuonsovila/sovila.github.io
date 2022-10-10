@@ -1,0 +1,162 @@
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .skill-subtitle {
+    font-size: 2.5vh;
+    color: white;
+  }
+  .skill-title {
+    color: rgb(238, 182, 144);
+    padding-left: 30px;
+  }
+  .about-subtitle {
+    font-size: 2.2vh;
+    color: white;
+    padding-bottom: 20px;
+  }
+  .about-subtitle span {
+    background-color: aqua;
+    color: black;
+    border-radius: 5px;
+    padding: 1px;
+  }
+  .contact-title {
+    text-align: center;
+    font-size: 3vh;
+    color: rgb(238, 182, 144);
+  }
+  .contact-subtitle {
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+  }
+  .skill {
+    width: 60%;
+    margin: auto;
+  }
+  .aboutme {
+    width: 60%;
+    margin: auto;
+    padding-top: 5%;
+  }
+  .about-title {
+    font-size: 5vh;
+    color: white;
+  }
+  .about-title span {
+    font-size: 3vh;
+  }
+  #crud-pic {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+  }
+  .btn-crud {
+    margin: 10px;
+    margin-left: 10px;
+  }
+  .skill-header {
+    font-size: 8vh;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .subtitle {
+    padding-top: 5%;
+  }
+  .project-title {
+    font-size: 8vh;
+    color: white;
+    font-style: italic;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: left; */
+  }
+  .detail-first {
+    padding: 20px;
+    color: wheat;
+  }
+  .appbar {
+    margin-left: 75%;
+    padding: 10px;
+    position: fixed;
+  }
+  .appbar a {
+    border: none;
+    background: none;
+    padding: 9px 15px;
+    font-size: 2vh;
+    color: none;
+    cursor: pointer;
+    color: white;
+  }
+  .appbar a:hover {
+    border-radius: 7px;
+    padding: 9px 15px;
+    border: 1px solid gray;
+    text-decoration: none;
+    color: white;
+  }
+  #name {
+    font-size: 40px;
+  }
+  .link-info {
+    justify-content: center;
+    padding: 10px;
+  }
+  .desc {
+    padding-top: 24%;
+    text-align: center;
+    padding-right: 27%;
+    color: white;
+  }
+  .desc a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ce1d2a;
+    padding: 10px 15px;
+    background-color: #ce1d2a;
+  }
+  .home-image {
+    background-image: url("./image/code.jpg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .project-image {
+    background-image: url("./image/coding.jpg");
+    height: 900px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .skill-image {
+    background-image: url("./image/kevin-canlas-ia7-T2bjDb4-unsplash.jpg");
+    height: 800px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .about-image {
+    background-image: url("./image/mohammad-rahmani-1bNQVGzuy0U-unsplash.jpg");
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .first {
+    width: 60%;
+    padding: 5rem 3rem;
+    margin: auto;
+  }
