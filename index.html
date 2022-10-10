@@ -1,53 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./script.js">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kuon SOvila - Back-end Developer</title>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <div class="outer">
-      <div class="home-image">
+      <div class="home-image" id="home">
         <div class="appbar">
-          <button text @click="scroll('home')" class="white--text">Home</button>
-          <button text @click="scroll('project')" class="white--text">
+          <a href="#home" class="white--text">Home</a>
+          <a text href="#project" class="white--text">
             Projects
           </button>
-          <button text @click="scroll('myskill')" class="white--text">
+          <a href="#myskill" class="white--text">
             Myskills
-          </button>
-          <button text @click="scroll('aboutme')" class="white--text">
-            About Me
-          </button>
+          </a>
+          <a text href="#aboutme" class="white--text"> About Me </a>
         </div>
         <div cols="8" class="desc">
-          <h3 class="white--text text--darken-1">Hello, My name is</h3>
-          <h1 class="white--text" id="name">Kuon Sovila</h1>
-          <h3 class="white--text">
+          <h5>Hello, My name is</h5>
+          <h1 id="name">Kuon Sovila</h1>
+          <h5>
             I'm a Creative Problem Solver and Back-end Developer.<br />
-          </h3>
+          </h5>
           <br />
           <a href="https://github.com/kuonsovila" target="_blank">Github</a>
         </div>
@@ -61,7 +43,6 @@
                 <div class="col-8">
                   <div class="card-body">
                     <h5 class="card-title" style="color: white">CRUD</h5>
-                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                     <p class="card-text" style="color: white">
                       This app allow user to Insert Update Read and Delete. I've
                       use Json-server to store data.
@@ -86,7 +67,6 @@
                 <div class="col-8">
                   <div class="card-body">
                     <h5 class="card-title" style="color: white">CRUD</h5>
-                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                     <p class="card-text" style="color: white">
                       This app allow user to Insert Update Read and Delete. I've
                       use Json-server to store data.
@@ -192,232 +172,4 @@
     </div>
   </body>
 </html>
-<script>
-  function scroll(refName) {
-    const element = document.getElementById(refName);
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-</script>
-<style scoped>
-  body {
-    height: 100%;
-    margin: 0;
-  }
-  * {
-    padding: 0;
-    margin: 0;
-  }
-  .skill-subtitle {
-    font-size: 2.5vh;
-    color: white;
-  }
-  .skill-title {
-    color: rgb(238, 182, 144);
-    padding-left: 30px;
-  }
-  .about-subtitle {
-    font-size: 2.2vh;
-    color: white;
-    padding-bottom: 20px;
-  }
-  .about-subtitle span {
-    background-color: aqua;
-    color: black;
-    border-radius: 5px;
-    padding: 1px;
-  }
-  .contact-title {
-    text-align: center;
-    font-size: 3vh;
-    color: rgb(238, 182, 144);
-  }
-  .contact-subtitle {
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-  }
-  .skill {
-    width: 60%;
-    margin: auto;
-  }
-  .aboutme {
-    width: 60%;
-    margin: auto;
-    padding-top: 5%;
-  }
-  .about-title {
-    font-size: 5vh;
-    color: white;
-  }
-  .about-title span {
-    font-size: 3vh;
-  }
-  #crud-pic {
-    width: 200px;
-    height: 200px;
-    justify-content: center;
-  }
-  .btn-crud {
-    margin: 10px;
-    margin-left: 10px;
-  }
-  .skill-header {
-    font-size: 8vh;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-  }
-  .subtitle {
-    padding-top: 5%;
-  }
-  .project-title {
-    font-size: 8vh;
-    color: white;
-    font-style: italic;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    /* text-align: left; */
-  }
-  .detail-first {
-    padding: 20px;
-    color: wheat;
-  }
-  .appbar {
-    margin-left: 75%;
-    padding: 10px;
-    position: fixed;
-  }
-  .appbar button {
-    border: none;
-    background: none;
-    padding: 9px 15px;
-    font-size: 2vh;
-    color: none;
-    cursor: pointer;
-    color: white;
-  }
-  .appbar button:hover {
-    border-radius: 7px;
-    padding: 9px 15px;
-    border: 1px solid gray;
-  }
-  #name {
-    font-size: 40px;
-  }
-  .link-info {
-    justify-content: center;
-    padding: 10px;
-  }
-  .desc {
-    padding-top: 24%;
-    text-align: center;
-    padding-right: 27%;
-    color: white;
-  }
-  .desc a {
-    text-decoration: none;
-    color: white;
-    border: 1px solid #ce1d2a;
-    padding: 10px 15px;
-    background-color: #ce1d2a;
-  }
-  .home-image {
-    background-image: url("./image/code.jpg");
-    height: 800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .project-image {
-    background-image: url("./image/coding.jpg");
-    height: 900px;
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .skill-image {
-    background-image: url("./image/kevin-canlas-ia7-T2bjDb4-unsplash.jpg");
-    height: 800px;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .about-image {
-    background-image: url("./image/mohammad-rahmani-1bNQVGzuy0U-unsplash.jpg");
-    height: 900px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .topInverse {
-    margin-top: -250px;
-  }
-  .topTolbar {
-    margin-top: 100px;
-    text-align: center;
-  }
-  .first {
-    width: 60%;
-    /* height: 334px; */
-    padding: 5rem 3rem;
-    margin: auto;
-  }
-  .second {
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    padding: 2rem 2rem;
-  }
-  .secondchild1 {
-    display: inline-block;
-    padding: 2rem 1rem;
-    vertical-align: middle;
-    text-align: left;
-    margin-top: 250px;
-  }
-  .child {
-    display: inline-block;
-    padding: 2rem 1rem;
-    vertical-align: middle;
-    text-align: left;
-    margin-right: 8px;
-  }
-  .bgColor2 {
-    background-color: #ce1d2a;
-  }
 
-  .child1 {
-    display: inline-block;
-    padding: 2rem 1rem;
-    vertical-align: middle;
-    margin-right: 5px;
-    width: 120px;
-  }
-  .child2 {
-    display: inline-block;
-    width: 245px;
-    vertical-align: middle;
-  }
-  .mRight {
-    margin-right: 8px;
-  }
-  .mButton {
-    margin-bottom: 8px;
-  }
-  .padding {
-    padding: 8px 0;
-  }
-
-  .col-12.padd {
-    padding: 12px 0 !important;
-  }
-  .col-12.childcol {
-    padding: 0 !important;
-  }
-  h1.number {
-    font-size: 50px;
-    font-weight: bold;
-  }
-</style>
