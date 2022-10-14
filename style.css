@@ -111,6 +111,26 @@
   #name {
     font-size: 40px;
   }
+  .date{
+    margin-left: 20px;
+  }
+  .date p {
+    color: gray;
+  }
+  .language {
+    margin: 20px;
+    margin-top: 60px;
+  }
+  .language button {
+    margin: 0px 01px;
+    background: none;
+    background-color: aqua;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid aqua;
+    padding: 0px 5px;
+  }
   .link-info {
     justify-content: center;
     padding: 10px;
