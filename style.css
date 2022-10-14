@@ -60,6 +60,10 @@
     height: 200px;
     justify-content: center;
   }
+  .card-link {
+    text-align: center;
+    padding-left: 30%;
+  }
   .btn-crud {
     margin: 10px;
     margin-left: 10px;
@@ -118,6 +122,13 @@
     color: white;
   }
   .desc a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ce1d2a;
+    padding: 10px 15px;
+    background-color: #ce1d2a;
+  }
+  .desc a:hover {
     text-decoration: none;
     color: white;
     border: 1px solid #ce1d2a;
