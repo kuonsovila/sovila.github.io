@@ -1,9 +1,10 @@
   html {
-    scroll-behavior: smooth;
   }
-  body {
+  html body {
+    /* scroll-behavior: smooth; */
     height: 100%;
     margin: 0;
+    /* overflow:hidden; */
   }
   * {
     padding: 0;
@@ -158,6 +159,7 @@
   .home-image {
     background-image: url("./image/code.jpg");
     height: 800px;
+    box-sizing:border-box;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
