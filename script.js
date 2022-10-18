@@ -7,7 +7,7 @@ $(document).ready(function () {
         {
           scrollTop: $(hash).offset().top,
         },
-        8000,
+        800,
         function () {
           window.location.hash = hash;
         }
@@ -15,7 +15,3 @@ $(document).ready(function () {
     }
   });
 });
-// window.scrollTo({
-//   top: 1000,
-//   behavior: "instant",
-// });
