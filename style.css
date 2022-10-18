@@ -193,3 +193,11 @@
     padding: 5rem 3rem;
     margin: auto;
   }
+  .footer {
+    background-color: rgba(40, 44, 52, 0.95);
+    color: white;
+    text-align: center;
+    margin-top: 130px;
+    padding: 10px 0px 1px 0px ;
+    /* padding-top: 5px; */
+  }
