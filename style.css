@@ -131,6 +131,9 @@
     margin: 20px;
     margin-top: 60px;
   }
+  .card body img {
+    animation: drop 1.5s ease;
+  }
   .language button {
     margin: 0px 01px;
     background: none;
@@ -209,5 +212,126 @@
     text-align: center;
     margin-top: 130px;
     padding: 10px 0px 1px 0px ;
-    /* padding-top: 5px; */
+  }
+  @media screen and (max-width: 1024px) {
+    .home-image {
+      height: 1000px;
+      box-sizing:border-box;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+  .project-image {
+    height: 1400px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+    .desc h5{
+      font-size: 30px;
+    }
+    .desc {
+      padding-left: 263px;
+      padding-top: 41%;
+      padding-right: 0px;
+    }
+    #name {
+      font-size: 60px;
+    }
+    .appbar {
+      position: fixed;
+      font-size: 20px;
+      margin-left: 10%;
+    }
+    .github {
+      font-size: 35px;
+    }
+    .github img {
+      width: 40px;
+      height:  40px;
+    }
+    .project-title {
+      font-size: 60px;
+    }
+    .card {    
+      width: 863px;
+      height: 510px;
+      margin-left: -200px;
+    }
+    .card-text {
+      font-size: 35px;
+    }
+    .card-title {
+      font-size: 35px;
+    }
+    .language button {
+      margin: 0px 01px;
+      padding: 0px 5px;
+      font-size: 30px;
+    }
+    .date {
+      font-size: 30px;
+    }
+    .card-link {
+      font-size: 35px;
+      margin-left: 49px;
+    }
+    .skill-header {
+      font-size: 60px;
+    }
+    .skill-title {
+      font-size: 40px;
+    }
+    .card-skill {
+      margin-left: -120px;
+      height: 710px;
+    }
+    .skill-subtitle {
+      font-size: 30px;
+    }
+    .skill-image {
+      height: 1000px;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .about-image {
+      height: 1600px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .about-title{
+      font-size: 40px;
+    }
+    .about-title span {
+      font-size: 30px;
+    }
+    .about-card {
+
+      margin-left: -120px;
+      height: 710px;
+    }
+    .about-subtitle{
+      font-size: 30px;
+    }
+    #little {
+      margin-left: -120px;
+      height: 300px;
+    }
+    #contact {
+      margin-left: -120px;
+      height: 300px;
+    }
+    .contact-title {
+      font-size: 40px;
+    }
+    .contact-subtitle  {
+      font-size: 30px;
+    }
   }
